@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #04071e;
+}
+
+.title {
+    font-size: 8rem;
+    color: white;
+    transition: all 0.4s ease;
+    letter-spacing: 0px;
+}
+
+.title:hover {
+    letter-spacing: 4px;
+    filter: drop-shadow(0 0 8px #00f) drop-shadow(0 0 12px #0ff);
+    transform: scale(1.07);
+}
+
+
+.button {
+    margin-top: 1rem;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.07);
+}

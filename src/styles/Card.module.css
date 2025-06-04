@@ -1,0 +1,54 @@
+.card {
+  width: 250px;
+  height: 320px;
+  perspective: 1000px;
+}
+
+.cardContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .cardContent {
+  transform: rotateY(180deg);
+}
+
+.cardFront, .cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #18182f;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+.cardFront {
+  z-index: 2;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+  background: #00bcd4;
+  color: #18182f;
+}
+.image {
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
